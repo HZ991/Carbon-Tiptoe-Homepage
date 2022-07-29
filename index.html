@@ -1,0 +1,249 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Carbon Tiptoe!</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Arimo">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Hahmlet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+
+        body, h1, h2, h3, h4, h5, h6 {
+            font-family: "Roboto"
+        }
+
+        .w3-bar, h1, button {
+            font-family: "Roboto"
+        }
+
+        .fa-anchor, .fa-coffee {
+            font-size: 200px
+        }
+    </style>
+</head>
+
+<!-- UPI: hzha991 -->
+<!-- Assigned colour: #412227 -->
+
+<body>
+
+    <!-- Media Sidebar -->
+    <div class="hz-media-sidebar">
+        <div class="w3-text-white hz-language-hover w3-right-align w3-large hz-lan-bar-position">
+            <a href="#" class="w3-button" style="font-size:40px"><i class="fa fa-facebook w3-margin-right"></i></a>
+            <a href="#" class="w3-button" style="font-size:40px"><i class="fa fa-instagram w3-margin-right"></i></a>
+            <a href="#" class="w3-button" style="font-size:40px"><i class="fa fa-twitter w3-margin-right"></i></a>
+        </div>
+    </div>
+
+    <!-- Navbar Main-->
+    <div class="hz-top" style="top: 50px; right: 30px; font-size: 24px">
+        <a href="#" class="hz-search-button w3-hide-small w3-padding-large"></a>
+        <div class="w3-transparent w3-right-align">
+            <a href="#" class="custom-color hz-nav-button w3-hide-small w3-padding-large">CALCULATOR</a>
+            <a href="#" class="custom-color hz-nav-button w3-hide-small w3-padding-large">ABOUT US</a>
+            <a href="#" class="custom-color hz-nav-button w3-hide-small w3-padding-large">TEAM</a>
+            <a href="#" class="custom-color hz-nav-button w3-hide-small w3-padding-large">CONTACT</a>
+            <a href="#" class="custom-color hz-nav-button w3-hide-small w3-padding-large">DONATE</a>
+            <a href="#" class="custom-color custom-border-color hz-transparent-white hz-nav-button w3-hide-small w3-padding-large hz-hover-brand" style="border: 2px solid #4edeff; border-radius: 3px">LOGIN</a>
+        </div>
+        <div>
+            <a href="#" class="hz-logo-button w3-hide-small w3-padding-large" style="position: absolute; left: 50px; top: -30px"></a>
+        </div>
+    </div>
+    <div class="dropdown w3-left-align">
+        <a class="custom-color w3-bar-item hz-button w3-padding-large hz-language-hover" style="position: absolute; right: 10px; top: -5px; border-radius: 10px">
+            <i class="fa fa-globe w3-margin-right hz-text-brand-light"></i>English  |  Te Reo<i class="fa fa-caret-down w3-margin-left hz-text-brand"></i>
+        </a>
+    </div>
+
+    <!-- Header -->
+    <header class="hz-header-background" style="width:100%; height: 1280px">
+        <div>
+            <h1 class="custom-color hz-header-text-position" style="top: 280px; font-family: 'Arimo'; font-size: 80px; font-weight: 700">For a Better <span class="hz-text-complementary">Tomorrow.</span></h1>
+            <p class="custom-color hz-header-text-position" style="top: 390px; font-family: 'Hahmlet'; font-size: 30px; font-weight: 700">
+                By becoming a member in our monthly carbon footprint calculation <br>
+                programme, you take part in helping the future generation to <br>
+                wake up to a better tomorrow.
+            </p>
+        </div>
+        <div>
+            <button id='trigger-modal' class="hz-header-text-position button-64" role="button" style="font-family: 'Roboto'; font-size: 35px; top: 610px"> <span class="text">Join Us Today → </span> </button>
+        </div>
+        <a href="#" class="hz-scroll-button w3-hide-small w3-padding-large"></a>
+    </header>
+
+    <!-- The Modal -->
+    <div id='joinModal' class="hz-join-modal">
+
+        <div class="hz-join-modal-content" style="height: 900px; width: 1400px; border-radius: 0px; background-image: url('modalbg.png'); border-radius: 20px;">
+
+            <div class="row">
+                <span class="hz-modal-close" style="position:absolute; top: -5px; right: 10px">&times;</span>
+                <!-- modal display background -->
+                <div class="column-one">
+                    <img src="CTlogowhite.png" alt="Carbon Tiptoe! logo" style="position: absolute; height: 250px; left: 150px; top: 100px;">
+                    <div style="font-family: 'Hahmlet'; position: relative; top: 360px; left: 40px">
+                        <p class="w3-text-white" style="font-size:25px"> <i class="fa fa-calendar w3-padding-large" style="font-size:50px; color: #4bb09e;" "></i> Monthly carbon tracking!</p>
+                        <p class="w3-text-white" style="font-size:25px"> <i class="fa fa-balance-scale w3-padding-large" style="font-size:50px; color: #4bb09e;" "></i> Offset your carbon emission!</p>
+                        <p class="w3-text-white" style="font-size:25px"> <i class="fa fa-line-chart w3-padding-large" style="font-size:50px; color: #4bb09e;" "></i> Make your lifestyle more green!</p>
+                    </div>
+                </div>
+                <div class="column-two">
+                    <!-- modal form content -->
+                    <div style="position: relative; top: 20px; left:150px">
+                        <label for="f-name" class="w3-text-white w3-padding-small" style="position: relative; left: 20px"><h2>― BECOME A MEMBER TODAY ―</h2></label>
+                        <div id='ct-form'>
+                            <form>
+                                <!-- user details -->
+                                <div id='userDetails'>
+                                    <label for="f-name" class="w3-text-white" style="position: relative; font-size: 24px"><h5>YOUR DETAILS</h5></label>
+                                    <input type="text" placeholder="Given Name" name="f-name" class="hz-modal-form glowing-form" style="width: 500px;" required>
+                                    <input type="text" placeholder="Surname" name="l-name" class="hz-modal-form glowing-form" style="width: 500px" required>
+                                    <input type="text" placeholder="Username" name="username" class="hz-modal-form glowing-form" style="width: 500px" required>
+                                    <input type="password" placeholder="Enter Password" name="psw" class="hz-modal-form" style="width: 500px" required>
+                                </div>
+
+                                <!-- addresses -->
+                                <div id='addresses'>
+                                    <label for="home" class="w3-text-white" style="position: relative; font-size: 24px"><h5><br>ADDRESSES</h5></label>
+                                    <input type="text" placeholder="Home Address" name="home" class="hz-modal-form" style="width: 500px" required>
+                                    <input type="text" placeholder="Work Address" name="work" class="hz-modal-form" style="width: 500px" required>
+                                </div>
+
+                                <!-- contacts -->
+                                <div id='contacts'>
+                                    <label for="phone" class="w3-text-white" style="position: relative; font-size: 24px"><h5><br>CONTACT DETAILS</h5></label>
+                                    <input type="tel" placeholder="Mobile Number" name="phone" class="hz-modal-form" style="width: 500px" required>
+                                    <input type="email" placeholder="Email" name="email" class="hz-modal-form" style="width: 500px" required>
+                                </div>
+                            </form>
+                        </div>
+
+                        <!-- checklist -->
+                        <div id='checklist' style="position:relative; top: 30px">
+                            <div>
+                                <input type="checkbox" name="terms" style="transform: scale(1.2);" required>
+                                <label for="terms" ; class="w3-padding" style="color: rgba(255,255,255, 0.7)">&nbsp&nbsp&nbsp&nbsp&nbspAgree to our <span style="color: #95c3bb">Terms & Agreements</label></span><br>
+                            </div>
+                            <div style="top: 10px; position: relative">
+                                <input type="checkbox" name="newsletter" style="transform: scale(1.2);">
+                                <label for="newsletter" class="w3-padding" style="color: rgba(255,255,255, 0.7);">&nbsp&nbsp&nbsp&nbsp&nbspSign up to our Newsletter</label></span><br>
+                            </div>
+                        </div>
+
+                        <!-- create account button -->
+                        <button id='modalBtn' class="hz-modal-button" role="button" style="font-family: 'Roboto'; top: 60px; font-size: 20px"> <b>CREATE MY ACCOUNT</b> </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- First Grid -->
+    <div class="w3-row-padding w3-padding-64" style="width:100%; height: 900px; background-image: url(gridbg.jpg)">
+        <div style="position: relative; top: -40px">
+            <h2 class="w3-center" style="font-family: 'Roboto'; font-weight: 600"><span class="hz-text-complementary">― WHAT WE DO ―</span></h2>
+
+            <!-- Column one -->
+            <div class="w3-center w3-padding-small" style="position: absolute; left: 210px">
+                <img src="bulb.png" alt="drawing of lightbulb" width="320" height="320">
+                <h3 class="custom-color" style="font-family: 'Roboto'; font-weight: 600">SAVE ENERGY AND POWER</h3>
+                <hr class="hz-divider-brand-light w3-padding" style="position: relative; left: 21%">
+                <h4 class="custom-color" style="font-family: 'Hahmlet'; line-height: 1.8">
+                    With the help of CT, our members save <br>
+                    over 2,300 kWts in energy on average <br>
+                    every year.
+                </h4>
+                <div class="w3-padding-16">
+                    <a href="#" class="custom-color custom-border-color hz-nav-button w3-hide-small w3-padding-large hz-hover-brand" style="border: 3px solid #4edeff; border-radius: 3px">
+                        LEARN MORE &nbsp&nbsp
+                        <i class="fa fa-chevron-right"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Column two -->
+            <div class="w3-center w3-padding-small" style="position: absolute; left: 730px">
+                <img src="plant.png" alt="Regrow the planet" width="320" height="320">
+                <h3 class="custom-color" style="font-family: 'Roboto'; font-weight: 600">CARBON OFFSET</h3>
+                <hr class="hz-divider-brand-light w3-padding" style="position: relative; left: 21%">
+                <h4 class="custom-color" style="font-family: 'Hahmlet';line-height: 1.8">
+                    By joining our membership, you're helping <br>
+                    us plant over 1,000 saplings a year to <br>
+                    to offset your annual carbon footprint
+                </h4>
+                <div class="w3-padding-16">
+                    <a href="#" class="custom-color custom-border-color hz-nav-button w3-hide-small w3-padding-large hz-hover-brand" style="border: 3px solid #4edeff; border-radius: 3px">
+                        LEARN MORE &nbsp&nbsp
+                        <i class="fa fa-chevron-right"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Column three -->
+            <div class="w3-center w3-padding-small" style="position: absolute; left: 1290px">
+                <img src="recycle.png" alt="drawing of recycling sign" width="320" height="320">
+                <h3 class="custom-color" style="font-family: 'Roboto'; font-weight: 600">TIPS AND ADVICE</h3>
+                <hr class="hz-divider-brand-light w3-padding" style="position: relative; left: 21%">
+                <h4 class="custom-color" style="font-family: 'Hahmlet';line-height: 1.8">
+                    Our weekly newsletter  <br>
+                    provides helpful advice on how you can <br>
+                    improve your carbon footprint
+                </h4>
+                <div class="w3-padding-16">
+                    <a href="#" class="custom-color custom-border-color hz-nav-button w3-hide-small w3-padding-large hz-hover-brand" style="border: 3px solid #4edeff; border-radius: 3px">
+                        LEARN MORE &nbsp&nbsp
+                        <i class="fa fa-chevron-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Second Grid -->
+    <div class="w3-row-padding w3-padding-64 w3-container" style="width: 100%; height: 600px; background-color: #F2F0F0; background-image: url('gridtwobg.png')">
+        <div class="w3-content">
+            <div class="w3-third" style="position: relative; left: 100px">
+                <img src="featherpen.png" alt="drawing of feather pen" width="350" height="350">
+            </div>
+            <div class="w3-center" style="position: absolute; left: 930px">
+                <h2 class="custom-color" style="font-family: 'Roboto'; font-weight: 600"><span class="hz-text-complementary">― SIGN UP TO OUR NEWSLETTER ―</span></h2>
+                <h4 class="custom-color w3-padding-32" style="font-family: 'Hahmlet';line-height: 1.8">
+                    If you're unsure about our membership, you can first try signing up to our <br>
+                    weekly newsletter. In addition to learning how you can help improve the <br>
+                    global carbon crisis, you'll also discover the stories behind the origin <br>
+                    of our organisation, receive blog updates, videos, and even sneak peaks <br>
+                    of our original artbook.
+                </h4>
+                <input class="hz-news-field" type="email" placeholder="Enter your email address" style="width: 400px; height: 50px; font: 20px; font-size: 20px">
+                <button class="hz-news-button" role="button" style="font-family: 'Roboto';font-size: 30px; top: -2px"> <b>➜</b> </button>
+                <h6 class="custom-color" style="font-family: 'Hahmlet'; font-weight: 700">It's free and will only take a minute</h6>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="custom-background-color w3-text-white w3-container w3-center w3-padding-64" style="background-image:url('footerbg.jpg')">
+        <h1 class="w3-margin w3-xlarge w3-italic" style="font-style: italic; font-family: 'Hahmlet'">"To combat the effects of carbon emission, we must all work together"</h1>
+        <div class="w3-xlarge w3-padding-32">
+            <i class="fa fa-facebook-official w3-hover-opacity"></i>
+            <i class="fa fa-instagram w3-hover-opacity"></i>
+            <i class="fa fa-snapchat w3-hover-opacity"></i>
+            <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+            <i class="fa fa-twitter w3-hover-opacity"></i>
+            <i class="fa fa-linkedin w3-hover-opacity"></i>
+        </div>
+        <p>- Website design and artworks by Hanyong Zhang -</a></p>
+    </div>
+
+    <!-- Javascript file for modal control -->
+    <script src="scripts.js"></script>
+
+</body>
+</html>
